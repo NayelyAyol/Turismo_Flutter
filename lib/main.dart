@@ -19,11 +19,12 @@ class MyApp extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Column(
-            children: const [
+            children: [
+
               Card(
-                margin: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
                 elevation: 5,
-                child: Column(
+                child: const Column(
                   children: [
                     ImageSection(image: 'images/mitad.jpg'),
                     TitleSection(
@@ -41,9 +42,9 @@ class MyApp extends StatelessWidget {
               ),
 
               Card(
-                margin: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
                 elevation: 5,
-                child: Column(
+                child: const Column(
                   children: [
                     ImageSection(image: 'images/cotopaxi.jpg'),
                     TitleSection(
@@ -61,9 +62,9 @@ class MyApp extends StatelessWidget {
               ),
 
               Card(
-                margin: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
                 elevation: 5,
-                child: Column(
+                child: const Column(
                   children: [
                     ImageSection(image: 'images/quillotoa.jpg'),
                     TitleSection(
@@ -81,9 +82,9 @@ class MyApp extends StatelessWidget {
               ),
 
               Card(
-                margin: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
                 elevation: 5,
-                child: Column(
+                child: const Column(
                   children: [
                     ImageSection(image: 'images/baños.jpg'),
                     TitleSection(
@@ -101,9 +102,9 @@ class MyApp extends StatelessWidget {
               ),
 
               Card(
-                margin: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
                 elevation: 5,
-                child: Column(
+                child: const Column(
                   children: [
                     ImageSection(image: 'images/2000.jpg'),
                     TitleSection(
@@ -121,9 +122,9 @@ class MyApp extends StatelessWidget {
               ),
 
               Card(
-                margin: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
                 elevation: 5,
-                child: Column(
+                child: const Column(
                   children: [
                     ImageSection(image: 'images/cajasjpg.jpg'),
                     TitleSection(
@@ -141,9 +142,9 @@ class MyApp extends StatelessWidget {
               ),
 
               Card(
-                margin: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
                 elevation: 5,
-                child: Column(
+                child: const Column(
                   children: [
                     ImageSection(image: 'images/islas.jpg'),
                     TitleSection(
@@ -154,16 +155,16 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'Las Islas Galápagos son un archipiélago único en el mundo, famoso por su biodiversidad y por haber inspirado la teoría de la evolución de Charles Darwin. Aquí se pueden observar especies endémicas que no existen en ningún otro lugar del planeta.',
+                          'Las Islas Galápagos son un archipiélago único en el mundo, famoso por su biodiversidad y por haber inspirado la teoría de la evolución de Charles Darwin.',
                     ),
                   ],
                 ),
               ),
 
               Card(
-                margin: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
                 elevation: 5,
-                child: Column(
+                child: const Column(
                   children: [
                     ImageSection(image: 'images/voto.jpg'),
                     TitleSection(
@@ -174,16 +175,16 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'La Basílica del Voto Nacional es la iglesia neogótica más grande de América Latina, ubicada en el centro histórico de Quito. Sus torres, vitrales y arquitectura la convierten en un ícono religioso y turístico del país.',
+                          'La Basílica del Voto Nacional es la iglesia neogótica más grande de América Latina, ubicada en el centro histórico de Quito.',
                     ),
                   ],
                 ),
               ),
 
               Card(
-                margin: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
                 elevation: 5,
-                child: Column(
+                child: const Column(
                   children: [
                     ImageSection(image: 'images/nariz.jpg'),
                     TitleSection(
@@ -194,16 +195,16 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'La Nariz del Diablo es una famosa ruta ferroviaria considerada una obra maestra de la ingeniería. El tren atraviesa montañas con paisajes impresionantes, ofreciendo una experiencia turística única en Ecuador.',
+                          'La Nariz del Diablo es una famosa ruta ferroviaria considerada una obra maestra de la ingeniería.',
                     ),
                   ],
                 ),
               ),
 
               Card(
-                margin: EdgeInsets.all(16),
+                margin: const EdgeInsets.all(16),
                 elevation: 5,
-                child: Column(
+                child: const Column(
                   children: [
                     ImageSection(image: 'images/diablo.jpg'),
                     TitleSection(
@@ -214,11 +215,12 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'El Pailón del Diablo es una de las cascadas más impresionantes del Ecuador, rodeada de vegetación exuberante y senderos naturales. Su caída de agua y la fuerza del río la convierten en un destino turístico muy popular.',
+                          'El Pailón del Diablo es una de las cascadas más impresionantes del Ecuador, rodeada de vegetación exuberante.',
                     ),
                   ],
                 ),
               ),
+
             ],
           ),
         ),
