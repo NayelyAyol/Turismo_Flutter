@@ -1,6 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() => runApp(const MyApp());
+
+// FUNCIÓN PARA ABRIR MAPS
+void openGoogleMaps(String query) async {
+  final Uri uri = Uri.parse(
+    'https://www.google.com/maps/search/?api=1&query=$query',
+  );
+
+  if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+    throw 'No se pudo abrir Google Maps';
+  }
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -21,6 +33,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             children: [
 
+              /// ================= MITAD DEL MUNDO =================
               Card(
                 margin: const EdgeInsets.all(16),
                 elevation: 5,
@@ -35,12 +48,14 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'La Mitad del Mundo es uno de los lugares turísticos más emblemáticos del Ecuador, donde se encuentra la línea ecuatorial que divide el hemisferio norte y sur del planeta. Este sitio ofrece museos, monumentos y experiencias culturales que explican la importancia geográfica del lugar, además de actividades interactivas para los visitantes.',
+                          'La Mitad del Mundo es uno de los lugares turísticos más emblemáticos del Ecuador, donde se encuentra la línea ecuatorial.',
                     ),
                   ],
                 ),
               ),
+              MapsButton(location: "Mitad del Mundo Quito"),
 
+              /// ================= COTOPAXI =================
               Card(
                 margin: const EdgeInsets.all(16),
                 elevation: 5,
@@ -55,11 +70,12 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'El Parque Nacional Cotopaxi es uno de los destinos naturales más impresionantes del Ecuador, famoso por albergar uno de los volcanes activos más altos del mundo. Este lugar es ideal para el ecoturismo, senderismo y observación de fauna andina en un entorno natural único y protegido.',
+                          'El Parque Nacional Cotopaxi es uno de los volcanes activos más altos del mundo.',
                     ),
                   ],
                 ),
               ),
+              MapsButton(location: "Volcán Cotopaxi"),
 
               Card(
                 margin: const EdgeInsets.all(16),
@@ -75,11 +91,12 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'La Laguna Quilotoa es un cráter volcánico lleno de agua de color turquesa que sorprende a todos los visitantes por su belleza natural. Rodeada de montañas y senderos, es un lugar perfecto para caminatas, fotografía y turismo comunitario en la región andina.',
+                          'La Laguna Quilotoa es un cráter volcánico lleno de agua color turquesa.',
                     ),
                   ],
                 ),
               ),
+              MapsButton(location: "Laguna Quilotoa Cotopaxi Ecuador"),
 
               Card(
                 margin: const EdgeInsets.all(16),
@@ -95,12 +112,14 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'Baños de Agua Santa es una ciudad turística reconocida por sus cascadas, aguas termales y actividades de aventura como canopy, rafting y puenting. Es considerada una de las principales puertas de entrada a la Amazonía ecuatoriana.',
+                          'Baños es famosa por sus cascadas, termas y deportes extremos.',
                     ),
                   ],
                 ),
               ),
+              MapsButton(location: "Baños de Agua Santa Ecuador"),
 
+              /// ================= MALECÓN 2000 =================
               Card(
                 margin: const EdgeInsets.all(16),
                 elevation: 5,
@@ -115,12 +134,14 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'El Malecón 2000 es un moderno paseo turístico ubicado a orillas del río Guayas en Guayaquil. Ofrece jardines, centros comerciales, restaurantes y museos, siendo uno de los espacios recreativos más visitados del país.',
+                          'El Malecón 2000 es un moderno paseo turístico en Guayaquil.',
                     ),
                   ],
                 ),
               ),
+              MapsButton(location: "Malecón 2000 Guayaquil"),
 
+              /// ================= CAJAS =================
               Card(
                 margin: const EdgeInsets.all(16),
                 elevation: 5,
@@ -135,12 +156,14 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'El Parque Nacional Cajas es un área protegida con cientos de lagunas de origen glaciar, rodeadas de páramos andinos. Es un lugar ideal para el senderismo, la observación de aves y el contacto directo con la naturaleza.',
+                          'El Parque Nacional Cajas tiene lagunas y páramos andinos.',
                     ),
                   ],
                 ),
               ),
+              MapsButton(location: "Parque Nacional Cajas Cuenca"),
 
+              /// ================= GALÁPAGOS =================
               Card(
                 margin: const EdgeInsets.all(16),
                 elevation: 5,
@@ -155,12 +178,14 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'Las Islas Galápagos son un archipiélago único en el mundo, famoso por su biodiversidad y por haber inspirado la teoría de la evolución de Charles Darwin.',
+                          'Las Islas Galápagos son famosas por su biodiversidad única.',
                     ),
                   ],
                 ),
               ),
+              MapsButton(location: "Islas Galápagos Ecuador"),
 
+              /// ================= BASÍLICA =================
               Card(
                 margin: const EdgeInsets.all(16),
                 elevation: 5,
@@ -175,12 +200,14 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'La Basílica del Voto Nacional es la iglesia neogótica más grande de América Latina, ubicada en el centro histórico de Quito.',
+                          'La Basílica del Voto Nacional es la iglesia neogótica más grande de América Latina.',
                     ),
                   ],
                 ),
               ),
+              MapsButton(location: "Basílica del Voto Nacional Quito"),
 
+              /// ================= NARIZ DEL DIABLO =================
               Card(
                 margin: const EdgeInsets.all(16),
                 elevation: 5,
@@ -195,11 +222,12 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'La Nariz del Diablo es una famosa ruta ferroviaria considerada una obra maestra de la ingeniería.',
+                          'La Nariz del Diablo es una obra maestra de ingeniería ferroviaria.',
                     ),
                   ],
                 ),
               ),
+              MapsButton(location: "Nariz del Diablo Alausí"),
 
               Card(
                 margin: const EdgeInsets.all(16),
@@ -215,12 +243,12 @@ class MyApp extends StatelessWidget {
                     ButtonSection(),
                     TextSection(
                       description:
-                          'El Pailón del Diablo es una de las cascadas más impresionantes del Ecuador, rodeada de vegetación exuberante.',
+                          'El Pailón del Diablo es una de las cascadas más impresionantes del Ecuador.',
                     ),
                   ],
                 ),
               ),
-
+              MapsButton(location: "Pailón del Diablo Original"),
             ],
           ),
         ),
@@ -370,5 +398,36 @@ class ImageSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Image.asset(image, width: 600, height: 240, fit: BoxFit.cover);
+  }
+}
+
+class MapsButton extends StatelessWidget {
+  final String location;
+
+  const MapsButton({super.key, required this.location});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      child: SizedBox(
+        width: double.infinity,
+        child: ElevatedButton.icon(
+          onPressed: () {
+            openGoogleMaps(location);
+          },
+          icon: const Icon(Icons.map),
+          label: const Text("Ver en Google Maps"),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blue,
+            foregroundColor: Colors.white,
+            padding: const EdgeInsets.symmetric(vertical: 12),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
