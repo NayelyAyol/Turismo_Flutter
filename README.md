@@ -50,15 +50,6 @@ dependencies:
   flutter:
     sdk: flutter
   url_launcher: ^6.3.0
-```
-
-## Dependencias
-
-```yaml
-dependencies:
-  flutter:
-    sdk: flutter
-  url_launcher: ^6.3.0
   share_plus: ^11.0.0
 ```
 
@@ -86,15 +77,16 @@ Al presionar el icono de ubicación, se abre Google Maps mostrando la localizaci
 
 Permite compartir información del lugar turístico utilizando las aplicaciones disponibles en el dispositivo.
 
+
 ## Capturas de Pantalla
 
 | Sitio turístico | Google Maps |
 |-------------------|-----------------|
-| <img width="400" height="1200" alt="WhatsApp Image 2026-06-06 at 12 19 44 AM" src="https://github.com/user-attachments/assets/189ea142-1155-476d-b95f-a8c70e1bfd34" />| <img width="400" height="1200" alt="WhatsApp Image 2026-06-06 at 12 20 00 AM" src="https://github.com/user-attachments/assets/41c8573c-67c6-4404-84a3-fdd5057b2464" />|
+| <img width="400" height="1000" alt="WhatsApp Image 2026-06-06 at 12 19 44 AM" src="https://github.com/user-attachments/assets/189ea142-1155-476d-b95f-a8c70e1bfd34" />| <img width="400" height="1000" alt="WhatsApp Image 2026-06-06 at 12 20 00 AM" src="https://github.com/user-attachments/assets/41c8573c-67c6-4404-84a3-fdd5057b2464" />|
 
 | Información | Compartir |
 |------------|------------|
-| <img width="400" height="1200" alt="WhatsApp Image 2026-06-06 at 12 19 51 AM" src="https://github.com/user-attachments/assets/5056405e-ebbe-46f1-8868-f74d4224fc18" />| <img width="400" height="1200" alt="WhatsApp Image 2026-06-06 at 12 19 51 AM (1)" src="https://github.com/user-attachments/assets/84860ac1-c5cd-4133-97f6-39ede232159d" />|
+| <img width="400" height="1000" alt="WhatsApp Image 2026-06-06 at 12 19 51 AM" src="https://github.com/user-attachments/assets/5056405e-ebbe-46f1-8868-f74d4224fc18" />| <img width="400" height="1000" alt="WhatsApp Image 2026-06-06 at 12 19 51 AM (1)" src="https://github.com/user-attachments/assets/84860ac1-c5cd-4133-97f6-39ede232159d" />|
 
 
 ## Video de funcionamiento de la aplicación
