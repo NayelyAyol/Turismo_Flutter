@@ -93,6 +93,8 @@ Permite compartir información del lugar turístico utilizando las aplicaciones 
 
 https://github.com/user-attachments/assets/94e7d20a-b506-470e-8310-3de795a5b019
 
+## APK
 
+[![Google Drive](https://img.shields.io/badge/Google%20Drive-Ver%20Archivos-green?logo=googledrive)](https://drive.google.com/drive/folders/10E0U5bV3C9WinpMtdq-ChJpje7ZVzTLi?usp=sharing)
 
 
