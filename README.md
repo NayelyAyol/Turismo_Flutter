@@ -4,9 +4,9 @@
 
 Aplicación móvil desarrollada en Flutter que presenta información sobre 10 sitios turísticos representativos del Ecuador. La aplicación permite visualizar información detallada de cada lugar, marcar sitios favoritos y acceder a su ubicación mediante Google Maps.
 
-## Objetivo
+## Autora
 
-Mostrar información turística de diferentes destinos ecuatorianos mediante una interfaz amigable que incluya imágenes, descripciones, ubicación geográfica y funcionalidades interactivas.
+Nayely Ayol
 
 ## Características
 
@@ -20,7 +20,6 @@ Mostrar información turística de diferentes destinos ecuatorianos mediante una
 * Contador de favoritos por lugar.
 * Apertura de Google Maps para visualizar la ubicación exacta.
 * Función para compartir información del sitio turístico.
-* Interfaz moderna utilizando Material Design.
 
 ## Sitios Turísticos Incluidos
 
@@ -41,6 +40,7 @@ Mostrar información turística de diferentes destinos ecuatorianos mediante una
 * Dart
 * Material Design
 * url_launcher
+* share_plus
 * Google Maps
 
 ## Dependencias
@@ -70,6 +70,10 @@ flutter pub get
 
 ## Funcionalidades Implementadas
 
+### Información
+
+Al presionar el icono de información se presenta el nombre, la ciudad, la latitud y la longitud del lugar turístico.
+
 ### Favoritos
 
 Cada tarjeta permite marcar o desmarcar un lugar turístico como favorito mediante un icono de corazón.
@@ -86,13 +90,17 @@ Permite compartir información del lugar turístico utilizando las aplicaciones 
 
 | Sitio turístico | Google Maps |
 |-------------------|-----------------|
-| ![Inicio](capturas/inicio.png) | ![Detalle](capturas/detalle.png) |
+| <img width="400" height="1200" alt="WhatsApp Image 2026-06-06 at 12 19 44 AM" src="https://github.com/user-attachments/assets/189ea142-1155-476d-b95f-a8c70e1bfd34" />| <img width="400" height="1200" alt="WhatsApp Image 2026-06-06 at 12 20 00 AM" src="https://github.com/user-attachments/assets/41c8573c-67c6-4404-84a3-fdd5057b2464" />|
 
 | Información | Compartir |
 |------------|------------|
-| ![Favoritos](capturas/favoritos.png) | ![Maps](capturas/maps.png) |
+| <img width="400" height="1200" alt="WhatsApp Image 2026-06-06 at 12 19 51 AM" src="https://github.com/user-attachments/assets/5056405e-ebbe-46f1-8868-f74d4224fc18" />| <img width="400" height="1200" alt="WhatsApp Image 2026-06-06 at 12 19 51 AM (1)" src="https://github.com/user-attachments/assets/84860ac1-c5cd-4133-97f6-39ede232159d" />|
 
 
-## Autor
+## Video de funcionamiento de la aplicación
 
-Nayely Ayol
+https://github.com/user-attachments/assets/94e7d20a-b506-470e-8310-3de795a5b019
+
+
+
+
